@@ -74,3 +74,6 @@ C:\Dev\WPF\WPFcontact\WPFcontact\obj\Debug\netcoreapp3.1\WPFcontact.AssemblyInfo
 C:\Dev\WPF\WPFcontact\WPFcontact\obj\Debug\netcoreapp3.1\WPFcontact.csproj.CopyComplete
 C:\Dev\WPF\WPFcontact\WPFcontact\obj\Debug\netcoreapp3.1\WPFcontact.dll
 C:\Dev\WPF\WPFcontact\WPFcontact\obj\Debug\netcoreapp3.1\WPFcontact.pdb
+C:\Dev\WPF\WPFcontact\WPFcontact\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Dev\WPF\WPFcontact\WPFcontact\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Dev\WPF\WPFcontact\WPFcontact\obj\Debug\netcoreapp3.1\App.baml
