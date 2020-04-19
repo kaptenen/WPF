@@ -39,7 +39,6 @@ namespace WPFcontact
                 using (SQLiteConnection connection = new SQLiteConnection(App.dbPath))
                 {
                     connection.Delete(_contact);
-                    connection.Update(_contact);
                 }
                     Close();
             }

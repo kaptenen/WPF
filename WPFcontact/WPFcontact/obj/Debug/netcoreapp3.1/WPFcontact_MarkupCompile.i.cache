@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\woggi\Desktop\Eric\C#\WPFcontact\WPFcontact\obj\Debug\netcoreapp3.1\
+C:\Dev\WPF\WPFcontact\WPFcontact\obj\Debug\netcoreapp3.1\
 WPFcontact
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\woggi\Desktop\Eric\C#\WPFcontact\WPFcontact\App.xaml
+C:\Dev\WPF\WPFcontact\WPFcontact\App.xaml
 3-281016855
 
-815702719
+7333845923
 197-1765835941
 ContactUpdateWindow.xaml;MainWindow.xaml;newContactWindow.xaml;
 

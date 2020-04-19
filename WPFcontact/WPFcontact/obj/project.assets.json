@@ -4766,11 +4766,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\woggi\\Desktop\\Eric\\C#\\WPFcontact\\WPFcontact\\WPFcontact.csproj",
+      "projectUniqueName": "C:\\Dev\\WPF\\WPFcontact\\WPFcontact\\WPFcontact.csproj",
       "projectName": "WPFcontact",
-      "projectPath": "C:\\Users\\woggi\\Desktop\\Eric\\C#\\WPFcontact\\WPFcontact\\WPFcontact.csproj",
+      "projectPath": "C:\\Dev\\WPF\\WPFcontact\\WPFcontact\\WPFcontact.csproj",
       "packagesPath": "C:\\Users\\woggi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\woggi\\Desktop\\Eric\\C#\\WPFcontact\\WPFcontact\\obj\\",
+      "outputPath": "C:\\Dev\\WPF\\WPFcontact\\WPFcontact\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\woggi\\AppData\\Roaming\\NuGet\\NuGet.Config",
