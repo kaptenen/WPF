@@ -40,12 +40,9 @@ namespace WPFcontact
                 {
                     connection.Delete(_contact);
                 }
-                    Close();
-            }
-            else
-            {
                 Close();
             }
+            Close();
         }
 
         private void updateButton_Click(object sender, RoutedEventArgs e)
