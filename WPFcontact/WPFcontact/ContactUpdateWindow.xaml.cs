@@ -18,12 +18,14 @@ namespace WPFcontact
     /// </summary>
     public partial class ContactUpdateWindow : Window
     {
-        private readonly Contact _contact;
-
+        public Contact Contact { get; set; }
+        public string Action { get; set; }
         public ContactUpdateWindow(Contact contact)
         {
             InitializeComponent();
-            this._contact = contact;
+            this.Contact = contact;
+
+            Action = null;
 
             nameTextBox.Text = contact.Name;
             emailTextBox.Text = contact.Email;
@@ -38,8 +40,9 @@ namespace WPFcontact
             {
                 using (SQLiteConnection connection = new SQLiteConnection(App.dbPath))
                 {
-                    connection.Delete(_contact);
+                    connection.Delete(Contact);
                 }
+                Action = "Delete";
                 Close();
             }
             Close();
@@ -47,16 +50,16 @@ namespace WPFcontact
 
         private void updateButton_Click(object sender, RoutedEventArgs e)
         {
-            _contact.Name = nameTextBox.Text;
-            _contact.Email = emailTextBox.Text;
-            _contact.Phone = phoneNumberTextBox.Text;
+            Contact.Name = nameTextBox.Text;
+            Contact.Email = emailTextBox.Text;
+            Contact.Phone = phoneNumberTextBox.Text;
 
             using (SQLiteConnection connection = new SQLiteConnection(App.dbPath))
             {
                 connection.CreateTable<Contact>();
-                connection.Update(_contact);
+                connection.Update(Contact);
             }
-
+           
             Close();
         }
     }

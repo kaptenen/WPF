@@ -40,5 +40,10 @@ namespace WPFcontact
             }
             Close();
         }
+
+        private void Grid_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            Close();
+        }
     }
 }

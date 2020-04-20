@@ -71,7 +71,19 @@ namespace WPFcontact
             {
                 ContactUpdateWindow contactUpdateWindow = new ContactUpdateWindow(selectedContact);
                 contactUpdateWindow.ShowDialog();
+
+                if (contactUpdateWindow.Action == "Delete")
+                {
+                    DeletedContact(selectedContact);
+                }
             }
+        }
+
+        private void DeletedContact(Contact selectedContact)
+        {
+            contacts.Remove(selectedContact);
+            contactListView.ItemsSource = null;
+            contactListView.ItemsSource = contacts;
         }
     }
 }
