@@ -41,9 +41,15 @@ namespace WPFcontact
             Close();
         }
 
-        private void Grid_MouseUp(object sender, MouseButtonEventArgs e)
+        private void CloseWindowButton_MouseUp(object sender, MouseButtonEventArgs e)
         {
             Close();
         }
+
+        private void DragWindow_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
+
     }
 }

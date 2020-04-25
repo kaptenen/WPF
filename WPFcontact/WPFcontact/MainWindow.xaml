@@ -3,12 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="Contacts" Height="450" Width="800">
     <Grid>
         <StackPanel Margin="10">
-        <Button Content="New Contact" Click="NewContactButton_Click"/>
-            <TextBox Margin="0,5" TextChanged="TextBox_TextChanged"/>
+            <Button Content="New Contact" Click="NewContactButton_Click"/>
+            <TextBox materialDesign:HintAssist.Hint="Search" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0,10" FontSize="20" TextChanged="TextBox_TextChanged"/>
             <ListView x:Name="contactListView" Margin="0,5,0,0" Height="280" SelectionChanged="contactListView_SelectionChanged">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -16,6 +17,7 @@
                             <TextBlock Text="{Binding Name}" x:Name="nameTextBlock" FontSize="20" FontWeight="Bold"/>
                             <TextBlock Text="{Binding Email}" x:Name="emailTextBlock" FontSize="15" Foreground="DodgerBlue"/>
                             <TextBlock Text="{Binding Phone}" x:Name="phoneTextBlock" FontSize="15" FontStyle="Italic"/>
+                            <Button Content="Delete" Width="90" HorizontalAlignment="Left" Background="Red"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>

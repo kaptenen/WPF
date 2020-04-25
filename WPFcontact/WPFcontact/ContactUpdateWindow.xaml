@@ -3,16 +3,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="ContactUpdateWindow" Height="400" Width="800">
+        Title="ContactUpdateWindow" Height="400" Width="350">
     <Grid>
         <StackPanel Margin="5">
             <TextBox x:Name="nameTextBox" Margin="0,0,0,5"/>
             <TextBox x:Name="emailTextBox" Margin="0,0,0,5"/>
             <TextBox x:Name="phoneNumberTextBox" Margin="0,0,0,5"/>
-            
-            <Button Content="Update" x:Name ="updateButton" Click="updateButton_Click"/>
-            <Button Content="Delete" Background="Red" Foreground="White" x:Name="deleteButton" Click="deleteButton_Click"/>
+            <Grid>
+                <Button Content="Update" x:Name ="updateButton" Click="updateButton_Click" Width="120" HorizontalAlignment="Left" Margin="20,10,0,0"/>
+                <Button Content="Delete" Background="Red" Foreground="White" x:Name="deleteButton" Click="deleteButton_Click" Width="120" HorizontalAlignment="Right" Margin="0,10,20, 0"/>
+            </Grid>
         </StackPanel>
     </Grid>
 </Window>
