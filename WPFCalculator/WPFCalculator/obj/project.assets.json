@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\woggi\\Desktop\\Eric\\C#\\WPFCalculator\\WPFCalculator\\WPFCalculator.csproj",
+      "projectUniqueName": "C:\\Dev\\WPF\\WPFCalculator\\WPFCalculator\\WPFCalculator.csproj",
       "projectName": "WPFCalculator",
-      "projectPath": "C:\\Users\\woggi\\Desktop\\Eric\\C#\\WPFCalculator\\WPFCalculator\\WPFCalculator.csproj",
+      "projectPath": "C:\\Dev\\WPF\\WPFCalculator\\WPFCalculator\\WPFCalculator.csproj",
       "packagesPath": "C:\\Users\\woggi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\woggi\\Desktop\\Eric\\C#\\WPFCalculator\\WPFCalculator\\obj\\",
+      "outputPath": "C:\\Dev\\WPF\\WPFCalculator\\WPFCalculator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\woggi\\AppData\\Roaming\\NuGet\\NuGet.Config",

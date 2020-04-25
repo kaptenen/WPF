@@ -145,7 +145,6 @@ namespace WPFCalculator
             }
             else
             {
-
                 displayLabel.Content = $"{displayLabel.Content},";
             }
         }
