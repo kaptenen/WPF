@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Contacts" Height="450" Width="800">
+        Title="Contacts" Height="450" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <StackPanel Margin="10">
             <Button Content="New Contact" Click="NewContactButton_Click"/>
@@ -17,7 +17,6 @@
                             <TextBlock Text="{Binding Name}" x:Name="nameTextBlock" FontSize="20" FontWeight="Bold"/>
                             <TextBlock Text="{Binding Email}" x:Name="emailTextBlock" FontSize="15" Foreground="DodgerBlue"/>
                             <TextBlock Text="{Binding Phone}" x:Name="phoneTextBlock" FontSize="15" FontStyle="Italic"/>
-                            <Button Content="Delete" Width="90" HorizontalAlignment="Left" Background="Red"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>

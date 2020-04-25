@@ -59,8 +59,32 @@ namespace WPFcontact
                 connection.CreateTable<Contact>();
                 connection.Update(Contact);
             }
-           
+
             Close();
+        }
+
+        private void Copy_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+
+
+
+            
+
+            if (button == nameCopy)
+            {
+                Clipboard.SetText(nameTextBox.Text);
+            }
+            if (button == emailCopy)
+            {
+                Clipboard.SetText(emailTextBox.Text);
+            }
+            if (button == phoneCopy)
+            {
+                Clipboard.SetText(phoneNumberTextBox.Text);
+            }
+
+
         }
     }
 }
