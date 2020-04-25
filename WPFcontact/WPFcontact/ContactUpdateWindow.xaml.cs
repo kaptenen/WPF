@@ -67,10 +67,6 @@ namespace WPFcontact
         {
             Button button = sender as Button;
 
-
-
-            
-
             if (button == nameCopy)
             {
                 Clipboard.SetText(nameTextBox.Text);
